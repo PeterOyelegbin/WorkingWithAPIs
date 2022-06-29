@@ -70,7 +70,7 @@ fields = “__all__”
 
 * On to the views. We will only allow users to interact with active/public urls through our API.
 
-* In blog/views.py,  create a new view/class PostListApi, which inherits DRF’s generic ListAPIView,  it’s config/attributes should be:
+* In links/views.py,  create a new view/class PostListApi, which inherits DRF’s generic ListAPIView,  it’s config/attributes should be:
 ```
 queryset = Link.objects.filter(active=True)
 
